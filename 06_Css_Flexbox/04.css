@@ -1,0 +1,87 @@
+/* 
+  04: APPLY THE flex-direction PROPERTY TO CREATE ROWS IN THE TWEET EMBED
+*/
+
+/* 
+  The header and footer in the tweet embed example have child items that could be
+  arranged as rows using the flex-direction property. This tells CSS to align the
+  children horizontally.
+*/
+
+/* 
+  Add the CSS property flex-direction to both the header and footer and set the 
+  value to row.
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+header .profile-name,
+header .follow-btn,
+header h3,
+header h4,
+footer,
+footer .stats {
+  display: flex;
+}
+
+header,
+footer {
+  flex-direction: row;
+}
+
+header .profile-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+header .profile-name {
+  margin-left: 10px;
+}
+
+header .follow-btn {
+  margin: 0 0 0 auto;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+header h3,
+header h4 {
+  margin: 0;
+}
+
+#inner p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#inner hr {
+  margin: 20px 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+
+footer .stats {
+  font-size: 15px;
+}
+
+footer .stats strong {
+  font-size: 18px;
+}
+
+footer .stats .likes {
+  margin-left: 10px;
+}
+
+footer .cta {
+  margin-left: auto;
+}
+
+footer .cta button {
+  border: 0;
+  background: transparent;
+}
