@@ -1,0 +1,61 @@
+/* 
+  08: USE grid-column TO CONTROL SPACING
+*/
+
+/*
+  Up to this point, all the properties that have been discussed are for grid containers.
+  The grid-column property is the first one for use on the grid items themselves.
+
+  The hypothetical horizontal and vertical lines that create the grid 
+  are referred to as lines.
+  These lines are numbered starting  with 1 at the top left corner of the grid and
+  move right for columns and down for rows, couting upward. 
+
+  To control the number of columns an item will comsume, you can use
+  the grid-column property in conjunction with the line numbers you want the item
+  to start and stop at.
+
+  Here's an example:
+
+    grid-column: 1 / 3;
+
+  This will make the item start at the first vertical line of the grid on the left and
+  span to the 3rd line of the grid, consume two columns.
+ */
+
+/* 
+  Make the item with class item5 consume the last two columns of the grid.
+ */
+
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+.item5 {
+  background: PaleGreen;
+}
+/* ----------------------------------- */
+
+.container {
+  font-size: 40px;
+  background-color: lightgray;
+  width: 100%;
+  min-height: 300px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.item5 {
+  grid-column: 2 / 4;
+}
