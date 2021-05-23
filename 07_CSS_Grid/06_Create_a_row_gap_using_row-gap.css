@@ -1,0 +1,39 @@
+/* 
+  06: CREATE A ROW GAP USING row-gap
+*/
+
+/* 
+  You can add a gap between the rows of a grid using row-gap in the same way
+  that you added a gap between columns in the previous challenge.
+*/
+
+/* 
+  Create a gap for the rows that is 5px tall. 
+*/
+
+.d1 {
+  background: lightskyblue;
+}
+.d2 {
+  background: lightsalmon;
+}
+.d3 {
+  background: paleturquoise;
+}
+.d4 {
+  background: lightpink;
+}
+.d5 {
+  background: palegreen;
+}
+/* ------------------------------------------------------- */
+
+.container {
+  font-size: 40px;
+  background: lightgray;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5px;
+}

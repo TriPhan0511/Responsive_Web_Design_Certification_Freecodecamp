@@ -1,0 +1,45 @@
+/* 
+  The CSS Grid is a newer standard that makes it easy to build complex
+  responsive layouts. It works by turning an element into a grid, and lets
+  you place child elements anywhere within.
+*/
+
+/* 
+  01: CREATE YOUR FIRST CSS GRID
+*/
+
+/* 
+  Turn any HTML element into a grid container by setting its display property to grid.
+  This gives you the ability to use all the other properties associated with CSS Grid.
+
+  Note: In CSS Grid, the parent element is referred to as the container and its children
+  are called items.
+*/
+
+/* 
+  Change the display of the div with the container class to grid.
+*/
+
+.container {
+  font-size: 40px;
+  width: 100%;
+  background: lightgray;
+
+  display: grid;
+}
+
+.d1 {
+  background: lightskyblue;
+}
+.d2 {
+  background: lightsalmon;
+}
+.d3 {
+  background: paleturquoise;
+}
+.d4 {
+  background: lightpink;
+}
+.d5 {
+  background: palegreen;
+}
