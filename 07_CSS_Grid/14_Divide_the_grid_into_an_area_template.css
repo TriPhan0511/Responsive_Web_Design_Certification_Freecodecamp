@@ -1,0 +1,55 @@
+/* 
+  14: DIVIDE THE GRID INTO AN AREA TEMPLATE
+*/
+
+/* 
+  You can group cells of your grid together into an area and give the area a custom name.
+  Do this by using grid-template-areas on the container like this:
+
+    grid-template-areas:
+      "header header header"
+      "advert content content"
+      "footer footer footer";
+      
+  The code above merges the top three cells together into an area named header,
+  the bottom three cells inito a footer area, 
+  and makes two areas in the middle row: advert and content.
+
+  Note: Every word in the code represents a cell and every pair of quotation marks represent a row.
+  In addition to custom labels, you can use a period (.) to designate an empty cell in the grid
+*/
+
+/* 
+  Place the area template so that the cell labled advert becomes an empty cell.
+*/
+
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+.item5 {
+  background: PaleGreen;
+}
+/* ----------------------------------- */
+
+.container {
+  background-color: lightgray;
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+
+  grid-template-areas:
+    'header header header'
+    '. content content'
+    'footer footer footer';
+}

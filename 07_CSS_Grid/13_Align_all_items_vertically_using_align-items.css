@@ -1,0 +1,41 @@
+/* 
+  13: ALIGN ALL ITEMS VERTICALLY USING align-items
+*/
+
+/* 
+  Using the align-items property on a grid container will set the vertical alignment for
+  all the items in our grid.
+*/
+
+/* 
+  Use it now to move all the items to the end of each cell.
+*/
+
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+.item5 {
+  background: PaleGreen;
+}
+/* ----------------------------------- */
+
+.container {
+  font-size: 40px;
+  background-color: lightgray;
+  width: 100%;
+  min-height: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: end;
+}

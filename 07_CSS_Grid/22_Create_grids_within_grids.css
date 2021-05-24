@@ -1,0 +1,50 @@
+/* 
+  22: CREATE GRIDS WITHIN GRIDS
+*/
+
+/* 
+  Turning an element into a grid only affects the behavior of its direct descendant.
+  So by turning a direct descendant into a grid, you have a grid within a grid.
+*/
+
+.item1 {
+  background: LightSkyBlue;
+  grid-area: header;
+}
+.item2 {
+  background: LightSalmon;
+  grid-area: advert;
+}
+.item3 {
+  background: PaleTurquoise;
+  grid-area: content;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.item4 {
+  background: LightPink;
+  grid-area: footer;
+}
+
+.itemOne {
+  background-color: palegreen;
+}
+
+.itemTwo {
+  background-color: blanchedalmond;
+}
+
+/* ----------------------------------- */
+
+.container {
+  font-size: 1.5em;
+  width: 100%;
+  min-height: 300px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  grid-template-areas: 'advert header' 'advert content' 'advert footer';
+}

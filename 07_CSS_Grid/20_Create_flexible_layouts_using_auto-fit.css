@@ -1,0 +1,58 @@
+/* 
+  20: CREATE FLEXIBLE LAYOUTS USING auto-fit
+*/
+
+/* 
+  auto-fit works almost identically to auto-fill. The only difference is that when the 
+  container's size exceeds the size of all the elements combined, auto-fill keeps inserting
+  empty rows and columns and pushes your items side by side, while auto-fit collapse
+  those empty rows or columns and stretches your items to fit the size of the container.
+
+  Note: If your container can;t fit all your items on one row, it will move them down to
+  a new one. 
+*/
+
+/* 
+  In the second grid, use auto-fit with repeat to fill the grid width columns that have a
+  minimum width of 60px and maximum of 1fr. Then resize the browser to see the difference.
+*/
+
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+.item5 {
+  background: PaleGreen;
+}
+/* ----------------------------------- */
+
+.container,
+.container2 {
+  font-size: 40px;
+  width: 100%;
+  min-height: 300px;
+}
+
+.container {
+  background-color: lightgray;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
+
+.container2 {
+  background-color: silver;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}

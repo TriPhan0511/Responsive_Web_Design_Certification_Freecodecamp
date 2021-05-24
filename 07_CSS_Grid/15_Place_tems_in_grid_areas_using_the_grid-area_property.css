@@ -1,0 +1,59 @@
+/* 
+  15: PLACE ITEMS IN GRID AREAS USING THE grid-area PROPERTY
+*/
+
+/* 
+  After creating an area template for your grid container, as shown in the previous challenge,
+  you can place an item in your custom area by referencing the name you gave to it. To do this,
+  you USE THE grid-area PROPERTY ON AN ITEM like this:
+  
+    .item1 {
+      grid-area: header;
+    }
+
+  This lets the grid know that you want the item1 class to go in the area named header.
+  In this case, the item will use the entire top row because that whole row is named as
+  the header area.
+*/
+
+/* 
+    Place an element with the item5 class in the footer area using the grid-area property.
+*/
+
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+.item5 {
+  background: PaleGreen;
+}
+/* ----------------------------------- */
+
+.container {
+  font: 40px;
+  background-color: lightgray;
+  width: 100%;
+  min-height: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+
+  grid-template-areas:
+    'header header header'
+    'advert content content'
+    'footer footer footer';
+}
+
+.item5 {
+  grid-area: footer;
+}
