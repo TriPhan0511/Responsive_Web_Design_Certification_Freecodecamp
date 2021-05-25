@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+  </head>
+  <body>
+    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+      <label for="indoor"
+        ><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked />
+        Indoor</label
+      >
+      <label for="outdoor"
+        ><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor</label
+      ><br />
+      <label for="loving"
+        ><input id="loving" type="checkbox" name="personality" value="loving" checked />
+        Loving</label
+      >
+      <label for="lazy"
+        ><input id="lazy" type="checkbox" name="personality" value="lazy" /> Lazy</label
+      >
+      <label for="energetic"
+        ><input id="energetic" type="checkbox" name="personality" value="energetic" />
+        Energetic</label
+      ><br />
+      <input type="text" placeholder="cat photo URL" required />
+      <button type="submit">Submit</button>
+    </form>
+    <!-- ------------------------------------------------------------------------------- -->
+    <hr />
+
+    <form action="">
+      <!-- Radio buttons -->
+      <input type="radio" name="indoor-outdoor2" id="indoor2" value="indoor" />
+      <label for="indoor2">Indoor</label>
+      <input type="radio" name="indoor-outdoor2" id="outdoor2" value="outdoor" checked />
+      <label for="outdoor2">Outdoor</label>
+
+      <br />
+
+      <!-- Checkboxes -->
+      <input type="checkbox" name="personality" id="age2" />
+      <label for="age2">Age</label>
+      <input type="checkbox" name="personality" id="national2" />
+      <label for="national2">National</label>
+      <input type="checkbox" name="personality" id="skin2" checked />
+      <label for="skin2">Skin</label>
+
+      <br />
+
+      <!-- input:text -->
+      <label for="userName">Username</label>
+      <input type="text" name="userName" id="userName" required />
+
+      <br />
+
+      <!-- button:submit -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
