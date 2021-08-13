@@ -1,0 +1,57 @@
+#rect {
+  background-color: black;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0 auto;
+
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: rgb(9, 255, 0);
+  }
+}
+/* --------------------------------------------------------------------- */
+
+.myImage:hover {
+  animation-name: changeWidth;
+  animation-duration: 500ms;
+}
+
+@keyframes changeWidth {
+  100% {
+    width: 40px;
+  }
+}
+/* -------------------------------------------------------------------- */
+
+.myButton {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0f5897;
+  padding: 5px 10px 8px 10px;
+}
+
+.myButton:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
+  }
+}
+
+
